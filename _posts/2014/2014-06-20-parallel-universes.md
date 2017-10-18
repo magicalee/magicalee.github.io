@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '夢的另類解讀─平行宇宙'
-tags: ["think"]
+tags: ["Think"]
 date: 2014-06-20 01:11
 comments: true
 categories: 

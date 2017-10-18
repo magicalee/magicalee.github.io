@@ -2,7 +2,7 @@
 layout: post
 title: 'First Verilog Code For DE0-Nano'
 date: 2014-04-21 11:05
-tags: ["verilog", "coding"]
+tags: ["Coding", "Verilog"]
 comments: true
 categories: []
 ---

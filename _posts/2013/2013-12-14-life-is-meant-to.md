@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '人生都是命中注定??'
-tags: ["think"]
+tags: ["Think"]
 date: 2013-12-14 23:19
 comments: true
 categories: 
