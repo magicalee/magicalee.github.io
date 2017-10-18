@@ -1,35 +1,50 @@
----
-layout: default
----
-<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+--- 
+layout: default 
+--- 
+<!-- Navi -->
+{% for cat in site.all_categories %}{% if page.category == cat[0] %}<a href="/">首页</a>&nbsp;>&nbsp;<a href="{{cat[2]}}">{{cat[1]}}</a>&nbsp;>&nbsp;正文{% endif %}{% endfor %}
+<!-- Title -->
+<h2>{{ page.title }}</h2>
+{% if page.tags.size > 0%}<b>标签：</b>{% for tag in page.tags %}{% if tag != "" %}<a href="/tags.html#{{ tag }}"><i>{{ tag }}</i></a>{% if forloop.index != page.tags.size %}, {% endif %}{% endif %}{% endfor %}{% endif %}
+<div class="post-date">
+	<span class="glyphicon glyphicon-time"></span>
+	{{ page.date | date:"%Y-%m-%d" }}
+</div>
+<br/>
 
-  <header class="post-header">
-    <h1 itemprop="name" class="post-title">{{ page.title }}</h1>
-    <meta itemprop="keywords" content="{{ page.tags | join: ',' }}" />
-    <p class="post-meta">
-    {{ site.locales[site.default_locale].PostedInCategories }}
-    {% for cat in page.categories %}
-    <a href="{{site.baseurl}}/categories/#{{ cat }}">{{ cat }}</a>{% unless page.categories.last == cat %}, {% endunless %}
-    {% endfor %} 
-    {% if page.tags != empty %}
-    {{ site.locales[site.default_locale].Taggedwith }}
-    {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>{% unless page.tags.last == tag %}, {% endunless %}
-    {% endfor %}
-    {% endif %}
-    <time itemprop="datePublished" datetime="{{ page.date | date: '%Y-%m-%d' }}">
-    {{ site.locales[site.default_locale].PostDate }}{{ page.date | date: "%b %-d, %Y" }}
-    </time>
-    </p>
-  </header>
-
-  <article class="post-content" itemprop="articleBody">
-    {{ content }}
-  </article>
-  <hr />
+<!-- content -->
+<div style="text-indent:2em;">
+{{ content }}
 </div>
 
+<br/>
+<b>原创文章，转载请注明出处！</b>
+<br/>
+<b>本文链接：</b><a href="{{site.url}}{{page.url}}" title="{{page.name}}">{{site.url}}{{page.url}}</a>
 
-{% include page_pagination.html%}
-{% include comments.html %}
-
+<!-- next and previous -->
+<div style="margin-top:15px; margin-bottom:10px">
+  {%if page.previous%}
+  <span class="next">
+    上篇：
+    <a href="{{page.previous.url}}">
+      {{page.previous.title}}
+    </a>
+  </span>
+  {%endif%} 
+  {%if page.next%}
+  <div style="float:right">
+  <span class="prev" >
+    下篇：
+    <a href="{{page.next.url}}">
+      {{page.next.title}}
+    </a>
+  </span>
+  </div>
+  {%endif%}
+</div>
+<hr>
+<!-- Blog Comments -->
+<div class="media">
+  {% include comment.html %} 
+</div>

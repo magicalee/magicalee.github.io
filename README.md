@@ -1,70 +1,22 @@
-Freshman21
-==========
+Jekyll博客模板
+================
 
-Freshman21 is a Jekyll blog theme, base on theme [Freshman](http://github.com/yulijia/freshman). 
+#### 1.浏览
+http://www.panxw.com, 支持PC与智能机访问。  
 
-A tribute to WordPress Theme Twenty-Twelve and Twenty-eleven.
+#### 2.模板使用
+修改_config.yml与_includes目录下相关文件进行配置。  
+模板可任意使用，但请保留本站**友情链接**。  
 
-Enjoy.
+#### 3.联系作者
+Email: winfirm(#)163.com  
+QQ交流群: 168563980  
 
+#### 4.赞助
+想给作者予以鼓励？欢迎打赏吧。  
+支付宝:  
+<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_alipay.jpg"/>
 
-![Screen](http://i.imgur.com/oSp7kacl.png)
-
-### Version 2.1 update 2016.06.06
-
-- master branch: the simplest template, original version with
-	* Open Graph META Tags
-	* Microdata(schema.org)
-
-- gh-pages branch: master branch with 
-
-	* [google analytics js template](https://github.com/yulijia/freshman21/blob/gh-pages/_includes/google_analytics.js)
-        * [BackToTop js script](https://github.com/yulijia/freshman21/tree/gh-pages/js)
-        * <q>readmore</q> module
-        * [keyboard shortcuts for pagination](http://yulijia.net/freshman21/news/2016/05/24/new-features.html)
-	* font awesome icon
-	* [Google search](https://github.com/yulijia/freshman21/blob/gh-pages/_includes/google_search.js)
-
-Clone master branch: 
-
-` git clone https://github.com/yulijia/freshman21.git -b master --single-branch`
-
-Clone gh-pages branch: 
-
-`git clone https://github.com/yulijia/freshman21.git -b gh-pages --single-branch`
-
-
-### A Summary of Features
-
-- Provide single column and two columns layout
-- Powerful configure file
-- Comments by Disqus
-- Support LaTeX (by MathJax)
-- Syntax highlighting
-- Multiple Languages support 
-    * English
-    * Chinese
-    * Japanese (Contributed by [kokeiro](https://github.com/kokeiro001))
-    * Polish (Contributed by [Derson5](https://github.com/Derson5))
-    * Korean (Contributed by [ulgoon](https://github.com/ulgoon))
-    * Russian (Contributed by [alexeyev](https://github.com/alexeyev))
-    * Turkish (Contributed by [mrkara](https://github.com/mrkara))
-
-### How to install this theme?
-
-```
-# please make sure you have already installed git tools and ruby tools(gem)
-$ gem install sass
-$ gem install jekyll
-$ git clone https://github.com/yulijia/freshman21.git
-$ mv freshman21/ yourblogname.github.io/
-
-```
-
-### Demo
-
-Single column, please see [my own blog](http://yulijia.net/en/)
-
-Two columns, please see the [theme website](http://yulijia.net/freshman21/)
-
+微信:  
+<img width="200" height="200" src="http://o83o7w0hk.bkt.clouddn.com//donate_qr/donate_weixin.jpg"/>
 
