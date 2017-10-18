@@ -1,13 +1,13 @@
-            <form action="https://www.egeso.com/" method="get">
-              <div class="input-group">
-                <input type="text" name="q" class="form-control">
-				<input type="hidden" name="ie" value="UTF-8" />
-				<input type="hidden" name="sitesearch" value="{{ site.domain }}" />
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="submit">
-                    <span class="glyphicon glyphicon-search">
-                    </span>
-                  </button>
-                </span>
-              </div>
-            </form>
+{% assign translation = site.data[page.lang] %}
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+  opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+  <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="{{ translation.searchtip }}" >
+
+  <div style="position: fixed; top: 16px; right: 16px; font-size: 35px;">
+	<span class="glyphicon glyphicon-remove-circle" id="cb-close-btn"></span>
+  </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px; font-size: 35px;">
+  <span class="glyphicon glyphicon-search" id="cb-search-btn"></span>
+</div>
