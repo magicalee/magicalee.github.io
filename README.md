@@ -1,9 +1,9 @@
-# magicalee's Blog
+# Magica's Blog
 >
-> C#, .NET, OOP, Docker
+> Java,BlockChain,Hyperledger
 >
 
-URL: http://columns.chicken-house.net
+URL: http://magicalee.github.io
 
 樣板來源: http://mazhuang.org/
 
