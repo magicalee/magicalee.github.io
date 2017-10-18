@@ -7,7 +7,7 @@ categories:
 ---
 剛上完一學期的物件導向程式語言，題末專題在其他期末考大魔王的摧殘下只能草率的應付，沒有做出甚麼實際的東西，所以從暑假開始，我就打算選一個簡單的遊戲來設法寫code。所以囉，就有了這非常簡陋的JAVA踩地雷問世，成為我第一個自己寫出來的java code。先來看看程式碼吧，我總共寫了兩個class
 <!--more-->
-	
+```
 
 	 /*Class Name:bombgame
 	  *
@@ -85,10 +85,11 @@ categories:
 	public void actionPerformed(ActionEvent e) {
 			
 	}}
+```
 這是第一個Class，在開起程式後，會跑出一個視窗，要求輸入妳要玩的踩地雷大小。
 
 <a href="http://www.flickr.com/photos/111666721@N02/11405552064/" title="Flickr 上 andylee03060306 的 1"><img src="http://farm8.staticflickr.com/7417/11405552064_a165d34014.jpg" width="498" height="397" alt="1"></a>
-
+```
 輸入行列之後，按下play就會跳出另一個視窗，也就是我寫的主程式Class
 
 	/*
@@ -338,7 +339,7 @@ categories:
 			return(bomb == 1 ? true : false);			
 		}	
 	}}
-
+```
 假如輸入5行5列，就會跳出遊戲視窗，如下圖
 
 <a href="http://www.flickr.com/photos/111666721@N02/11405535556/" title="Flickr 上 andylee03060306 的 2"><img src="http://farm8.staticflickr.com/7322/11405535556_abcc2a48ae.jpg" width="500" height="247" alt="2"></a>
