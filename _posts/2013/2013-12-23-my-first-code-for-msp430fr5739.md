@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'my first code for msp430fr5739'
+tags: ["coding"]
 date: 2013-12-23 22:37
 comments: true
 categories: 
