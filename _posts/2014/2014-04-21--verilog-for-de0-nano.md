@@ -2,6 +2,7 @@
 layout: post
 title: 'First Verilog Code For DE0-Nano'
 date: 2014-04-21 11:05
+tags: ["verilog,coding"]
 comments: true
 categories: [Verilog, DE0-Nano, 初學, LED]
 ---
@@ -21,7 +22,7 @@ categories: [Verilog, DE0-Nano, 初學, LED]
 選擇Verilog HDL File
 ![](/wp-content/uploads/2014/02/2017-04-21-5.jpg)
 貼上以下程式碼
-```ruby
+```
 `timescale 1ns / 1ps
 module test1(input clk,input reset,output [7:0] led );
        
