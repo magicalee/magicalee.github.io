@@ -4,7 +4,7 @@ title: 'my first code for msp430fr5739'
 tags: ["Coding"]
 date: 2013-12-23 22:37
 comments: true
-categories: 
+categories:
 ---
 最近因為學校的專題課程，而入手了這片"msp430fr5739 experimenter board"。由於教授鼓勵我們從網路上自己學習，自己找資料，所以在花費幾乎一整天的時間下，我終於成功自己寫出能讓LED燈亮起來的程式，並且讓它再變成可以讓所有LED由1~8全部依序亮起來的code。以下就是我的code
 <!--more-->

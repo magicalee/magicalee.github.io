@@ -3,7 +3,7 @@
 > Java,BlockChain,Hyperledger
 >
 
-URL: http://magicalee.github.io
+URL: https://magicalee.github.io
 
 樣板來源: http://mazhuang.org/
 
