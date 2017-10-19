@@ -4,7 +4,7 @@ title: 'First Verilog Code For DE0-Nano'
 date: 2014-04-21 11:05
 tags: ["Coding", "Verilog"]
 comments: true
-categories: []
+categories:
 ---
 下半學期的專題研究課程終於擺脫了「手工藝」也就是焊接的訓練了，我們三個人開始朝著各自所選的目標去努力。這階段分成微控器msp430撰寫、電路版設計、Verilog撰寫三個方向，而我是朝著精通Verilog的目標去專研。
 一開始教授就給我了一塊開發版─DE0-Nano
