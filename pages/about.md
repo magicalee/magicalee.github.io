@@ -11,7 +11,7 @@ permalink: /about/
 麻吉卡
 
 ## Contact Me
-b00505005@ntu.edu.tw
+
 {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
