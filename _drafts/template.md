@@ -8,5 +8,4 @@ comments: true
 redirect_from:
 logo: /public/full-logo.jpg
 ---
-
 <!--more-->
