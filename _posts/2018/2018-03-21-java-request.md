@@ -8,7 +8,7 @@ categories:
 - "學習筆記"
 ---
 # Java 實作 Http-Request
-之前專案有實作Java-Http-Request，以下紀錄example
+之前專案有實作Java-Http-Request，以下紀錄分享
 ## curl example
 ```
 curl -s -X POST \
@@ -32,48 +32,45 @@ import java.nio.charset.StandardCharsets;
 
 class TempController {
 	def send(){
-			String body = '{"fcn":"fcn","args":["a","b"]}'
-			String auth = "Bearer token"
-			String urlParameters  = body;
-			byte[] postData = urlParameters.getBytes( StandardCharsets.UTF_8 );
-			int postDataLength = postData.length;
-			String checkurl = "http://localhost:4000";
-			try
-			{
-				URL connectto = new URL(checkurl);
-				HttpURLConnection conn = (HttpURLConnection) connectto.openConnection();
-				conn.setRequestMethod( "POST" );
-				conn.setRequestProperty( "Content-Length", Integer.toString( postDataLength ));
-				conn.setRequestProperty( "authorization", auth);
-				conn.setRequestProperty( "Content-Type", "application/json");
-				conn.setRequestProperty( "charset", "utf-8");
-				conn.setUseCaches(false);
-				conn.setAllowUserInteraction(false);
-				conn.setInstanceFollowRedirects( false );
-				conn.setDoOutput( true );
+		String body = '{"fcn":"fcn","args":["a","b"]}'
+		String auth = "Bearer token"
+		String urlParameters  = body;
+		byte[] postData = urlParameters.getBytes( StandardCharsets.UTF_8 );
+		int postDataLength = postData.length;
+		String checkurl = "http://localhost:4000";
+		try{
+			URL connectto = new URL(checkurl);
+			HttpURLConnection conn = (HttpURLConnection) connectto.openConnection();
+			conn.setRequestMethod( "POST" );
+			conn.setRequestProperty( "Content-Length", Integer.toString( postDataLength ));
+			conn.setRequestProperty( "authorization", auth);
+			conn.setRequestProperty( "Content-Type", "application/json");
+			conn.setRequestProperty( "charset", "utf-8");
+			conn.setUseCaches(false);
+			conn.setAllowUserInteraction(false);
+			conn.setInstanceFollowRedirects( false );
+			conn.setDoOutput( true );
 				
-				DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
-				wr.writeBytes(urlParameters);
-				wr.flush();
-				wr.close();
+			DataOutputStream wr = new DataOutputStream(conn.getOutputStream());
+			wr.writeBytes(urlParameters);
+			wr.flush();
+			wr.close();
 				
-				int responseCode = conn.getResponseCode();
+			int responseCode = conn.getResponseCode();
 				
-				BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-				StringBuilder sb = new StringBuilder();
-				String line;
+			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+			StringBuilder sb = new StringBuilder();
+			String line;
 				
-				while ((line = br.readLine()) != null) {
-					sb.append(line+"\n");
-				}
-				br.close();
-                //輸出結果
-				System.out.println(sb);
+			while ((line = br.readLine()) != null) {
+				sb.append(line+"\n");
 			}
-			catch (IOException e)
-			{
-				e.printStackTrace();
-			}
+			br.close();
+            //輸出結果
+			System.out.println(sb);
+		}catch (IOException e){
+			e.printStackTrace();
+		}
 	}
 }
 ```
