@@ -10,8 +10,14 @@ permalink: /about/
 
 Magica
 
+平日禮拜四或禮拜五通常會約桌遊團，假日偶爾也會開
+
+想要參加桌遊團或是交流其他項目都可以在文章下回覆或是加我LINE
+
 ## Contact Me
-andylee03060306@gmail.com
+* Email : andylee03060306@gmail.com
+* Line  : amilegend
+
 {% for website in site.data.social %}
 * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
 {% endfor %}
