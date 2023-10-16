@@ -1,11 +1,12 @@
 ---
 layout: post
-title: 'C#學習筆記 OpenCvSharp & Tesseract'
+title: 'C#學習筆記1 OpenCvSharp & Tesseract'
 tags: ["C#"]
 date: 2023-10-03 19:25
 comments: true
 categories: 
 - "學習筆記"
+- "C#"
 ---
 # C#學習筆記 OpenCvSharp & Tesseract
 應徵某外商時出的C#考題，要利用OpenCvSharp和Tesseract去實作讀取MP4檔案，並把其中的資料輸出成CSV。
